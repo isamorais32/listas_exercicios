@@ -1,5 +1,5 @@
 produtos = [ 
-    [1,"suco", 7.00],
+     [1,"suco", 7.00],
     [2,"salgadinho", 8.00],
     [3,"chocolate", 6.00],
 ]
@@ -19,3 +19,12 @@ produtos.append([4,"cereal", 9.00])
 
 print (produtos)
 
+alter = 2  
+
+for produto in produtos:
+    if produto[0] == alter:
+        produto[2] = 10.50 
+        print("Preço alterado:", produto)
+        break
+
+print(produtos)
